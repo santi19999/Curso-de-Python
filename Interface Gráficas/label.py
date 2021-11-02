@@ -5,15 +5,10 @@ class Window():
     def __init__(self):
         self.ventana = Tk()     
         i=1
-        miFrame=self.new_Frame("Encabezado",450,350)
-        miLabel1=self.new_Label("Soy la Imagen {}: ".format(i),10,20)
-        self.image1=PhotoImage(file="css")
-        miLabel=self.new_Label(miFrame, image=self.image1).place(x=100,y=200)
-        
-        
-        #self.new_Label("Soy la Imagen {}: ".format(i+1),10,120)
-
-        #self.new_Label("Soy la Imagen {}: ".format(i+2),10,220)
+        self.new_Frame("Encabezado",450,350)
+        self.new_Label("Soy la Imagen {}: ".format(i),10,20)
+        self.new_Label("Soy la Imagen {}: ".format(i+1),10,120)
+        self.new_Label("Soy la Imagen {}: ".format(i+2),10,220)
 
         '''Creamos Botones Inicando la cantidad, los crea automaticamente
         cant_b = int(input("Indique cuantos botones desea agregar"))
@@ -37,11 +32,9 @@ class Window():
         self.nombre=Frame(self.ventana, width=ancho , height=alto)
         self.nombre.config(bg="red")
         self.nombre.pack()
-        return self.nombre
 
     def new_Label(self,texto,xx,yy):
         Label(self.nombre, text=texto,fg="red",font=("Comic Sans MS",12)).place(x=xx,y=yy)
-        return self.nombre
 
     def new_button(self,text,xx,yy):
         btn=ttk.Button(text=text,width=10)
