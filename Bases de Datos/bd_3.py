@@ -9,7 +9,7 @@ productos=[
     ("Patin", 20 ,"juguetería"),
     ("Pantalón", 15 ,"confeccion"),
     ("Destornillador", 25 ,"ferrerteria"),
-    ("Jarrón", 45 ,"cerámica")
+    ("Jarrón", 45 ,"cerámicaS")
 ]
 
 miCursor.executemany("INSERT INTO PRODUCTOS VALUES(NULL,?,?,?)",productos)

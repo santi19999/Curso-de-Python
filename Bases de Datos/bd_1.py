@@ -14,7 +14,7 @@ misDatos=[
     (6,"Martina","Herrera Gauna")
 ]
 
-#Seleccionamos todos los datos de la tabla y los almacenamos en una lista
+#Seleccionamos todos los datos  de la tabla y los almacenamos en una lista
 miCursor.execute("SELECT * FROM PRODUCTOS")
 misDatos = miCursor.fetchall()
 print(misDatos)

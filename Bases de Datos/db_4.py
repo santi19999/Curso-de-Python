@@ -3,7 +3,7 @@ import sqlite3
 miConexion = sqlite3.connect("GestionProductos")
 miCursor   = miConexion.cursor()
 
-#Seleccionamos todos los datos de una sola columna o campo
+#Seleccionamos todos  los datos de una sola columna o campo
 #miCursor.execute("SELECT NOMBRE_ARTICULO FROM PRODUCTOS")
 
 #Seleccionamos todos los registros del campo SECCION que tienen ese dato en el campo 
