@@ -1,0 +1,9 @@
+En consola , dentro de la carpeta donde se encuentra el archivo
+
+
+pyinstaller --windowed --onefile --icon=./icono.ico nombredelarchivo.py
+
+
+--windowed --> Para que se abra solo la ventana grafica
+--onefile --> Para que se compile todo en un solo archivo
+--icon = ./icono.ico --> Para agregarle un icono a un exe
