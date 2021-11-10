@@ -1,33 +1,31 @@
 def funciones_decoradoras(funcion_parametro):
     
-    def funcion_interior():
+    def funcion_interior(*args): #Debenos tener el parametro *args para recibir argumentos
         print("Vamos a realizar Cálculos: ")
         
-        funcion_parametro()
+        funcion_parametro(*args)
         
-        print("Finalizaron los Cálculos. ")
-        
-        funcion_parametro()
-        
+        print("Finalizaron los Cálculos. ")        
         
     return funcion_interior
 
 
 @funciones_decoradoras
-def suma():
+def suma(num1,num2,num3):
     
-    print(15+20)
+    print(num1+num2+num3)
+
 
 @funciones_decoradoras
 
-def resta():
+def resta(num1,num2,num3):
     
-    print(10-20)
+    print(num1-num2-num3)
     
 
 
-suma()
-resta()
+suma(10,10,10)
+resta(60,10,5)
 
 
 
